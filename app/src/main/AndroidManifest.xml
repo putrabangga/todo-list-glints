@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodoListGlints">
         <activity
+            android:name=".ui.admin.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.list.TaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.detail.DetailTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.add.AddTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.authentication.register.RegisterActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
