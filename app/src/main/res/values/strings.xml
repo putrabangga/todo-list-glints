@@ -1,21 +1,3 @@
 <resources>
     <string name="app_name">Todo List Glints</string>
-    <string name="title_app">To Do List </string>
-    <string name="add_task">Add Task</string>
-    <string name="photo">Photo</string>
-    <string name="high_priority">High Priority</string>
-    <string name="date_todo">26 Jul 2021</string>
-    <string name="time">10 AM</string>
-    <string name="title_todo">Cook for breakfast</string>
-    <string name="description_todo">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Laoreet velit donec feugiat eu platea tempor. Ut dictumst maecenas dictum ornare venenatis nulla dolor.</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
-    <string name="priority">Priority</string>
-    <string name="date">Date</string>
-    <string name="start">Start</string>
-    <string-array name="priority_spinner">
-        <item>High Priority</item>
-        <item>Medium Priority</item>
-        <item>Low Priority</item>
-    </string-array>
 </resources>
