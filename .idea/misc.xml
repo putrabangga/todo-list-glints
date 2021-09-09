@@ -23,7 +23,11 @@
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_detail_task.xml" value="0.2625" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_forgot_password.xml" value="0.4" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_task.xml" value="0.259375" />
-        <entry key="app/src/main/res/layout/activity_admin.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/bg_list_purple.xml" value="0.2569230769230769" />
+        <entry key="app/src/main/res/drawable/bg_text_input.xml" value="0.2569230769230769" />
+        <entry key="app/src/main/res/drawable/ic_email.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_all_user.xml" value="0.25" />
       </map>
     </option>
