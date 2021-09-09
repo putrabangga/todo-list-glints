@@ -11,6 +11,7 @@ import com.application.todolistglints.data.TodoEntity
 import com.application.todolistglints.databinding.ActivityMainBinding
 import com.application.todolistglints.ui.add.AddTaskActivity
 import com.application.todolistglints.ui.detail.DetailActivity
+import com.application.todolistglints.ui.detail.DetailActivity.Companion.extraTask
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,9 +47,8 @@ class MainActivity : AppCompatActivity() {
 
             todoAdapter.setOnItemClickCallback(object : TodoAdapter.OnItemClickCallback {
                 override fun onItemClicked(data: TodoEntity) {
-                    val detailIntent = Intent(context, DetailActivity::class.java)
-//                        detailIntent.putExtra(extraMovie, data.title)
-//                        detailIntent.putExtra(extraType, typeMovie)
+                    val detailIntent = Intent(this@MainActivity, DetailActivity::class.java)
+                    detailIntent.putExtra(extraTask, data.title)
                     startActivity(detailIntent)
                 }
             })

@@ -20,7 +20,9 @@
             android:exported="true" />
         <activity
             android:name=".ui.detail.DetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Detail Task"
+            android:parentActivityName=".ui.main.MainActivity" />
         <activity
             android:name=".ui.add.AddTaskActivity"
             android:exported="true"

@@ -76,6 +76,16 @@ object DataDummy {
 
         listTodoUser += TodoEntity(
             2,
+            "Playing Badminton",
+            "sparring and play badminton with my friends at the Nusantara Gor",
+            "Low Priority",
+            "14 September 2021",
+            "06 AM",
+            R.drawable.badminton
+        )
+
+        listTodoUser += TodoEntity(
+            3,
             "Feeding my cat Oslo",
             "give the oslo whiskas and then play together",
             "High Priority",

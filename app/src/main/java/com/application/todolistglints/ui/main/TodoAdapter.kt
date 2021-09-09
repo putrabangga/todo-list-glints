@@ -33,21 +33,19 @@ class TodoAdapter(private val todo: ArrayList<TodoEntity>) :
         val description: TextView = itemView.findViewById(R.id.description)
 
         fun bind(todo: TodoEntity) {
-            with(itemView) {
-                Glide.with(itemView.context)
-                    .load(todo.image)
-                    .apply(RequestOptions().override(0, 400))
-                    .into(image)
+            Glide.with(itemView.context)
+                .load(todo.image)
+                .apply(RequestOptions().override(0, 400))
+                .into(image)
 
-                priority.text = todo.priority
-                date.text = todo.dueDate
-                time.text = todo.start
-                title.text = todo.title
-                description.text = todo.description
+            priority.text = todo.priority
+            date.text = todo.dueDate
+            time.text = todo.start
+            title.text = todo.title
+            description.text = todo.description
 
-                itemView.setOnClickListener {
-                    onItemClickCallback?.onItemClicked(todo)
-                }
+            itemView.setOnClickListener {
+                onItemClickCallback?.onItemClicked(todo)
             }
         }
     }
