@@ -39,7 +39,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
                 onSnack(it)
             }else{
                 binding.progress.visibility = View.GONE
-                errorLogin(email)
+                errorForgotPassword(email)
             }
         }
 
@@ -64,7 +64,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
         snackbar.show()
     }
 
-    private fun errorLogin(email: String): Boolean {
+    private fun errorForgotPassword(email: String): Boolean {
         val empty = "Please fill this field"
         val invalid = "Invalid email address"
         val notRegistered = "Email not registered"
