@@ -13,7 +13,7 @@
             android:name=".ui.authentication.forgot_password.ForgotPasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.authentication.login.LoginActivtiy"
+            android:name=".ui.main.MainActivity"
             android:exported="true" />
         <activity
             android:name=".ui.admin.AdminActivity"
@@ -28,7 +28,7 @@
             android:name=".ui.authentication.register.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.authentication.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
