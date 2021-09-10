@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.application.todolistglints.R
 import com.application.todolistglints.databinding.ActivityAdminBinding
-import com.application.todolistglints.ui.authentication.login.LoginActivtiy
+import com.application.todolistglints.ui.authentication.login.LoginActivity
 import com.application.todolistglints.utils.DataDummy
 
 class AdminActivity : AppCompatActivity() {
@@ -38,7 +38,7 @@ class AdminActivity : AppCompatActivity() {
                 .setCancelable(false)
                 .setPositiveButton("Yes", DialogInterface.OnClickListener {
                     dialog, id ->  finish()
-                    startActivity(Intent(this, LoginActivtiy::class.java))
+                    startActivity(Intent(this, LoginActivity::class.java))
                 })
                 .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, id -> dialog.cancel()  })
 

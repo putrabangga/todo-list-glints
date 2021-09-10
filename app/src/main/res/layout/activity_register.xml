@@ -4,6 +4,205 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.authentication.register.RegisterActivity">
+    android:background="@color/light_purple"
+    android:orientation="vertical"
+    tools:context=".ui.authentication.login.LoginActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_auth">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lora_bold"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sign up to start create your to do list"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_username"
+            style="@style/MyFilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Username"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
+            app:startIconDrawable="@drawable/ic_user"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_email"
+            style="@style/MyFilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyFilledBox"
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyFilledBox"
+            android:id="@+id/text_input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Confirm Password"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/blue"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Have an account?"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="180dp"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

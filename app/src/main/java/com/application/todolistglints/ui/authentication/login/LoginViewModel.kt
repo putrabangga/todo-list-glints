@@ -1,8 +1,6 @@
 package com.application.todolistglints.ui.authentication.login
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.application.todolistglints.data.UserEntity
 import com.application.todolistglints.utils.DataDummy
 
 class LoginViewModel : ViewModel() {

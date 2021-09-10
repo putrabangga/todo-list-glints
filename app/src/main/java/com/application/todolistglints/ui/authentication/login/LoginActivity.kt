@@ -8,6 +8,8 @@ import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.ViewModelProvider
 import com.application.todolistglints.R
 import com.application.todolistglints.databinding.ActivityLoginActivityBinding
+import com.application.todolistglints.ui.authentication.forgot_password.ForgotPasswordActivity
+import com.application.todolistglints.ui.authentication.register.RegisterActivity
 import com.application.todolistglints.ui.main.MainActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -27,6 +29,9 @@ class LoginActivity : AppCompatActivity() {
             binding.progressBar.visibility = View.VISIBLE
 
             if (loginViewModel.getUsername(username, password)) {
+                binding.textInputUsername.error = null
+                binding.textInputPassword.error = null
+
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 binding.progressBar.visibility = View.GONE
@@ -35,6 +40,16 @@ class LoginActivity : AppCompatActivity() {
                 validatePassword(password)
                 binding.progressBar.visibility = View.GONE
             }
+        }
+
+        binding.tvForgotPassword.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvSignUp.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 
