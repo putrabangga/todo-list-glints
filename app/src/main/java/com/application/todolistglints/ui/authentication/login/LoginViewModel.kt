@@ -5,12 +5,16 @@ import com.application.todolistglints.utils.DataDummy
 
 class LoginViewModel : ViewModel() {
 
-    fun getUsername(username: String, password: String): Boolean {
+    fun getUsername(username: String, password: String): String? {
         for(item in DataDummy.generateDummyUser()) {
             if (username == item.username && password == item.password) {
-                return true
+                if(username.equals("admin")){
+                    return "admin"
+                }else{
+                    return "user"
+                }
             }
         }
-        return false
+        return null
     }
 }

@@ -4,37 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
     tools:context=".ui.main.MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_title"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_title_home"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/light_purple"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:text="To Do App"
+        android:fontFamily="@font/lora_bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lora_bold"
-            android:gravity="left"
-            android:text="@string/title_app"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv_desc_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your to do list"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_home"/>
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_home">
+
+
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_todo"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_title"
+        app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/item_task" />
@@ -48,14 +74,17 @@
         android:backgroundTint="#5CAFFB"
         android:contentDescription="@string/add_task"
         android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997"
         app:tint="@color/white" />
 
+
+
+    </RelativeLayout>
     <ProgressBar
         android:id="@+id/mov_progressbar"
         style="?android:attr/progressBarStyle"
