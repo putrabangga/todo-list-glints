@@ -9,6 +9,8 @@
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/bg_list_purple.xml" value="0.2755208333333333" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/clarity_email_line.xml" value="0.21574074074074073" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/custom_border.xml" value="0.2755208333333333" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/custom_button.xml" value="0.2755208333333333" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/custom_input.xml" value="0.264" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/fluent_lock_closed_32_regular.xml" value="0.21574074074074073" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/fluent_lock_closed_32_regular_1.xml" value="0.21574074074074073" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/group_33489.xml" value="0.1" />
@@ -16,12 +18,16 @@
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/group_33507.xml" value="0.21574074074074073" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/ic_add.xml" value="0.2755208333333333" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/ic_user.xml" value="0.11851851851851852" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/drawable/zondicons_photo.xml" value="0.21574074074074073" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/font/lora_bold.xml" value="0.28958333333333336" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_admin.xml" value="0.259375" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_detail.xml" value="0.259375" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_detail_task.xml" value="0.2625" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_forgot_password.xml" value="0.4" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_login_activity.xml" value="0.264" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_login_activtiy.xml" value="0.259375" />
+        <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_main.xml" value="0.17685185185185184" />
         <entry key="..\:/Documents/TEKNIK KOMPUTER/Merdeka Belajar - Kampus Merdeka/Mini Project/todo-list-glints/app/src/main/res/layout/activity_task.xml" value="0.259375" />
         <entry key="app/src/main/res/drawable/bg_list_purple.xml" value="0.2569230769230769" />
         <entry key="app/src/main/res/drawable/bg_text_input.xml" value="0.2569230769230769" />

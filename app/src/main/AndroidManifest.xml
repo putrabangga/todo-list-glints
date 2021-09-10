@@ -11,43 +11,30 @@
         android:theme="@style/Theme.TodoListGlints">
         <activity
             android:name=".ui.authentication.forgot_password.ForgotPasswordActivity"
-            android:exported="true" >
-
-
-        </activity>
+            android:exported="true" />
         <activity
-            android:name=".ui.authentication.login.LoginActivtiy"
+            android:name=".ui.main.MainActivity"
             android:exported="true" />
         <activity
             android:name=".ui.admin.AdminActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ui.detail.DetailActivity"
-            android:exported="true"
-            android:label="Detail Task"
-            android:parentActivityName=".ui.main.MainActivity" />
-
+            android:exported="true" />
         <activity
             android:name=".ui.add.AddTaskActivity"
-            android:exported="true"
-            android:label="Add Task"
-            android:parentActivityName=".ui.main.MainActivity" />
+            android:exported="true" />
         <activity
             android:name=".ui.authentication.register.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="true"
-            android:theme="@style/main">
+            android:name=".ui.authentication.login.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <meta-data
