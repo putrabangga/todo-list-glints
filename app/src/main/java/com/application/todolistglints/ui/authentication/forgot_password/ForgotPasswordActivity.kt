@@ -11,9 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.application.todolistglints.R
 import com.application.todolistglints.databinding.ActivityAdminBinding
 import com.application.todolistglints.databinding.ActivityForgotPasswordBinding
-import com.application.todolistglints.databinding.ActivityLoginActivtiyBinding
 import com.application.todolistglints.ui.admin.AdminViewModel
-import com.application.todolistglints.ui.authentication.login.LoginActivtiy
+import com.application.todolistglints.ui.authentication.login.LoginActivity
 import com.google.android.material.snackbar.Snackbar
 
 
@@ -51,7 +50,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
     fun onSnack(view: View){
         val snackbar = Snackbar.make(view, "Email has been sent. Please check your email.",
             Snackbar.LENGTH_LONG).setAction("Close"){
-                startActivity(Intent(this, LoginActivtiy::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
                 finish()
         }
         snackbar.setActionTextColor(resources.getColor(R.color.white))
