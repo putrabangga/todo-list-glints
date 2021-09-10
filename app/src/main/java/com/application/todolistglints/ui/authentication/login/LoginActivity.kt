@@ -8,6 +8,7 @@ import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.ViewModelProvider
 import com.application.todolistglints.R
 import com.application.todolistglints.databinding.ActivityLoginActivityBinding
+import com.application.todolistglints.ui.admin.AdminActivity
 import com.application.todolistglints.ui.authentication.forgot_password.ForgotPasswordActivity
 import com.application.todolistglints.ui.authentication.register.RegisterActivity
 import com.application.todolistglints.ui.main.MainActivity
@@ -28,14 +29,25 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.edtPassword.text.toString()
             binding.progressBar.visibility = View.VISIBLE
 
-            if (loginViewModel.getUsername(username, password)) {
+            if (loginViewModel.getUsername(username, password).equals("admin")) {
+                binding.textInputUsername.error = null
+                binding.textInputPassword.error = null
+
+                val intent = Intent(this, AdminActivity::class.java)
+                startActivity(intent)
+                finishAffinity()
+                binding.progressBar.visibility = View.GONE
+            } else if(loginViewModel.getUsername(username, password).equals("user")){
                 binding.textInputUsername.error = null
                 binding.textInputPassword.error = null
 
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+                finishAffinity()
                 binding.progressBar.visibility = View.GONE
-            } else {
+            }
+
+            else {
                 validateUsername(username)
                 validatePassword(password)
                 binding.progressBar.visibility = View.GONE
@@ -51,6 +63,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 
     private fun validateUsername(username: String): Boolean {

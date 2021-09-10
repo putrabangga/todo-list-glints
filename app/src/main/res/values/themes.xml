@@ -17,4 +17,9 @@
     <style name="MyFilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="hintTextColor">@color/white</item>
     </style>
+
+    <style name="main" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>

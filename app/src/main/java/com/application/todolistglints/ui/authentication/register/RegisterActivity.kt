@@ -7,6 +7,7 @@ import android.util.Patterns
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.application.todolistglints.databinding.ActivityRegisterBinding
+import com.application.todolistglints.ui.authentication.login.LoginActivity
 import com.application.todolistglints.ui.main.MainActivity
 
 class RegisterActivity : AppCompatActivity() {
@@ -38,6 +39,7 @@ class RegisterActivity : AppCompatActivity() {
                 binding.textInputConfirmPassword.error = null
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+                finish()
             } else if (password != confirmPassword){
                 binding.progressBar.visibility = View.GONE
                 binding.textInputConfirmPassword.error = "Password not matching"
@@ -48,6 +50,10 @@ class RegisterActivity : AppCompatActivity() {
                 validatePassword(password)
                 validateConfirmPassword(confirmPassword)
             }
+        }
+        binding.tvSignin.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finishAffinity()
         }
     }
 
